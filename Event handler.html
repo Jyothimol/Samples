@@ -1,0 +1,41 @@
+<html>
+<head>
+<script language="javascript">
+function click()
+{
+var x=document.getElementById("t1");
+var y=document.getElementById("t2");
+var z=document.getElementById("t3");
+z.value=x.value+y.value;
+}
+function fun()
+{
+alert("are sure???");
+
+}
+function load()
+{
+alert("Image is loaded");
+}
+</script>
+</head>
+<body>
+<form name=frm >
+<h4>ONCLICK</h4>
+Enter first name : <input type=text id=t1><br><br>
+Enter second name : <input type=text id=t2 ><br><br>
+full name : <input type=button value=Add onclick="click();alert('Added')"><br>
+<input type=text id=t3><br>
+<h4>ONBLUR</h4>
+<input type=text name=t4 onblur="t5.value=value" ><br>
+<input type=text name=t5 ><br>
+<h4>ONCHANGE</h4>
+<select id="findme" onchange="fun()">
+          <option value= ORANGE>ORANGE</option>
+          <option value= APPLE>APPLE</option>
+          <option value= BANANA>BANANA</option></select>
+
+<img src="C:\images.png" onload="loadImage()" width="500" height="500">
+</form>
+</body>
+</html>

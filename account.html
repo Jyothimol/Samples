@@ -1,0 +1,44 @@
+<html>
+<body>
+<script type="text/javascript">
+function Account(no,name,bal)
+{
+   this.no=no;
+   this.name=name;
+   this.bal=bal;
+}
+Account.minBalance=500;
+Account.prototype.display=fun;
+Account.prototype.deposit=dep;
+Account.prototype.withdraw=withdr;
+function dep(amnt)
+{
+   
+   this.bal=this.bal+amnt;
+}
+function withdr(wit)
+{
+   if(this.bal<Account.minBalance)
+   {
+      document.write("insufficient balance");
+   }
+   else
+   {
+     
+      this.bal=this.bal-wit;
+   }
+}
+function fun()
+{
+   document.write(this.no+"<br>");
+   document.write(this.name+"<br>");
+   document.write(this.bal+"<br>");
+}
+var a=new Account(101,'jyothi',100000);
+a.deposit(40000);
+a.display();
+a.withdraw(10000);
+a.display()
+</script>
+</body>
+</html>

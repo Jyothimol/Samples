@@ -1,0 +1,53 @@
+<html>
+<head>
+<script language="javascript">
+function add()
+{
+      var x=document.frm.t1.value;
+      var y=document.frm.t2.value;
+      document.frm.t3.value=x+y;
+}
+</script>
+</head>
+<body onload="alert('Loaded')">
+<form name=frm>
+     <tr>
+	<th>Enter the first value</th>
+	<td>
+	   <input type=text name=t1 onblur="alert('Blur Event Generated');"><br>
+	</td>
+     </tr>
+
+	<tr>
+	   <th>Enter the second value</th>
+	   <td>
+	     <input type=text name=t2><br>
+	   </td>
+	</tr>
+				
+	<tr>
+	    <th>Result</th>
+	    <td>
+		<input type=text name=t3><br>
+	    </td>
+	</tr>
+				
+	<tr>
+           <th>Fruits</th>
+           <td>
+              <select name=list onchange="alert('value is changed');">
+              <option selected>Apple</option>
+              <option>Orange</option>
+              <option>Graphes</option>
+              </select>
+            </td>
+        </tr>
+      <tr>
+          <th>
+              <input type=button onclick="add()" value="Add"><br>
+          </th>
+      </tr>
+   </form>
+</body>
+</html>
+         			

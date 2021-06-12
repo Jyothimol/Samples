@@ -1,0 +1,40 @@
+<html>
+<head>
+<script language="javascript">
+class student
+{
+    constructor(r,n)
+    {
+       this.rno=r;
+       this.sname=n;
+    }
+ display()
+ {
+     document.write(this.rno);
+     document.write(this.sname);
+ }
+}
+class mark extends student
+{
+    constructor(m1,m2,m3,r,n)
+    {
+       super(r,n);
+       this.m1=m1;
+       this.m2=m2;
+       this.m3=m3;
+    }
+  total()
+  {
+    return this.m1+this.m2+this.m3;
+  }
+  display()
+  {
+     super.display();
+     document.write(total mark+"t");
+  }
+var s=new student(1,'njhghg',10,25,42);
+s.total();
+s.display();
+</script>
+</head>
+</html>
